@@ -289,3 +289,12 @@ docker compose down
 # Parar e remover todos os dados
 docker compose down -v
 ```
+
+
+---
+
+## Autoria
+
+```bash
+
+Projeto criado por: João Carlos Vieira Machado.
