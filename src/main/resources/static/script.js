@@ -145,7 +145,7 @@
         return;
     }
 
-    const sellerPhone = '5515996923234';
+    const sellerPhone = '5515996996901';
 
     let message = 'Pedido:%0A%0A';
 
