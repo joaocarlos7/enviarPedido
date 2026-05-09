@@ -297,4 +297,6 @@ docker compose down -v
 
 ```bash
 
-Projeto criado por: João Carlos Vieira Machado.
+Desenvolvido por João Carlos Vieira Machado.
+
+LinkedIn: https://www.linkedin.com/in/jo%C3%A3o-carlos-machado-3ab280100/
