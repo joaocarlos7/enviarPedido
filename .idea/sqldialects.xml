@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/main/java/com/PedidoFeito/database/01_create_table.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/PedidoFeito/database/02_import_data_exemplo.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/PedidoFeito/database/03_queries_uteis.sql" dialect="PostgreSQL" />
+  </component>
+</project>

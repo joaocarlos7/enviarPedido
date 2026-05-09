@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id>AcessibilidadeHTML</id>
+          </State>
+          <State>
+            <id>Acesso refletivoJava</id>
+          </State>
+          <State>
+            <id>Arquivos de propriedades</id>
+          </State>
+          <State>
+            <id>Arquivos de propriedadesJava</id>
+          </State>
+          <State>
+            <id>Auxílio à migração de nível de linguagem JavaJava</id>
+          </State>
+          <State>
+            <id>Auxílios para a migração de nível de linguagem JavaJava</id>
+          </State>
+          <State>
+            <id>ClasseConvenções de nomenclaturaJava</id>
+          </State>
+          <State>
+            <id>Cobertura de código</id>
+          </State>
+          <State>
+            <id>Constructos de código detalhados ou redundantesJava</id>
+          </State>
+          <State>
+            <id>Construções redundantesKotlin</id>
+          </State>
+          <State>
+            <id>Controle de versão</id>
+          </State>
+          <State>
+            <id>Convenção de nomenclaturaGroovy</id>
+          </State>
+          <State>
+            <id>Convenções de nomenclaturaJava</id>
+          </State>
+          <State>
+            <id>Convenções de nomenclaturaKotlin</id>
+          </State>
+          <State>
+            <id>ConversãoQuestões numéricasJava</id>
+          </State>
+          <State>
+            <id>Declaração redundanteGroovy</id>
+          </State>
+          <State>
+            <id>Definido pelo usuário</id>
+          </State>
+          <State>
+            <id>DesempenhoJava</id>
+          </State>
+          <State>
+            <id>EditorConfig</id>
+          </State>
+          <State>
+            <id>EmbebidoDesempenhoJava</id>
+          </State>
+          <State>
+            <id>EncapsulamentoJava</id>
+          </State>
+          <State>
+            <id>EstiloGradle</id>
+          </State>
+          <State>
+            <id>EstiloGroovy</id>
+          </State>
+          <State>
+            <id>Estrutura de classesJava</id>
+          </State>
+          <State>
+            <id>Estrutura de código que pode causar confusãoGroovy</id>
+          </State>
+          <State>
+            <id>Expressão regular</id>
+          </State>
+          <State>
+            <id>FinalizaçãoJava</id>
+          </State>
+          <State>
+            <id>Fluxo de dadosGroovy</id>
+          </State>
+          <State>
+            <id>Fluxo de dadosJava</id>
+          </State>
+          <State>
+            <id>Frameworks de testeJava</id>
+          </State>
+          <State>
+            <id>Frameworks de testeLinguagens JVM</id>
+          </State>
+          <State>
+            <id>GPathGroovy</id>
+          </State>
+          <State>
+            <id>Geral</id>
+          </State>
+          <State>
+            <id>Gerenciamento de recursosJava</id>
+          </State>
+          <State>
+            <id>Gradle</id>
+          </State>
+          <State>
+            <id>Gradle Declarativo</id>
+          </State>
+          <State>
+            <id>GradleMigraçãoKotlin</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>ImportaçõesJava</id>
+          </State>
+          <State>
+            <id>InicializaçãoJava</id>
+          </State>
+          <State>
+            <id>Injecção de linguagem</id>
+          </State>
+          <State>
+            <id>Inspeção de coroutineKotlin</id>
+          </State>
+          <State>
+            <id>Internacionalização</id>
+          </State>
+          <State>
+            <id>InternacionalizaçãoJava</id>
+          </State>
+          <State>
+            <id>JSON e JSON5</id>
+          </State>
+          <State>
+            <id>JUnit</id>
+          </State>
+          <State>
+            <id>JUnitJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java 10Auxílios para a migração de nível de linguagem JavaJava</id>
+          </State>
+          <State>
+            <id>Java 11Auxílios para a migração de nível de linguagem JavaJava</id>
+          </State>
+          <State>
+            <id>Java 14Auxílios para a migração de nível de linguagem JavaJava</id>
+          </State>
+          <State>
+            <id>Java 15Auxílios para a migração de nível de linguagem JavaJava</id>
+          </State>
+          <State>
+            <id>Java 16Auxílios para a migração de nível de linguagem JavaJava</id>
+          </State>
+          <State>
+            <id>Java 21Auxílios para a migração de nível de linguagem JavaJava</id>
+          </State>
+          <State>
+            <id>Java 23Auxílios para a migração de nível de linguagem JavaJava</id>
+          </State>
+          <State>
+            <id>Java 25Auxílios para a migração de nível de linguagem JavaJava</id>
+          </State>
+          <State>
+            <id>Java 5Auxílios para a migração de nível de linguagem JavaJava</id>
+          </State>
+          <State>
+            <id>Java 7Auxílios para a migração de nível de linguagem JavaJava</id>
+          </State>
+          <State>
+            <id>Java 8Auxílios para a migração de nível de linguagem JavaJava</id>
+          </State>
+          <State>
+            <id>Java 9Auxílios para a migração de nível de linguagem JavaJava</id>
+          </State>
+          <State>
+            <id>JavaFX</id>
+          </State>
+          <State>
+            <id>JavadocJava</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>Linguagens JVM</id>
+          </State>
+          <State>
+            <id>Manifesto</id>
+          </State>
+          <State>
+            <id>Markdown</id>
+          </State>
+          <State>
+            <id>Maturidade do códigoJava</id>
+          </State>
+          <State>
+            <id>Maven</id>
+          </State>
+          <State>
+            <id>MavenMigraçãoKotlin</id>
+          </State>
+          <State>
+            <id>Medidas de métodoJava</id>
+          </State>
+          <State>
+            <id>Melhores práticasGradle</id>
+          </State>
+          <State>
+            <id>MemóriaJava</id>
+          </State>
+          <State>
+            <id>Migração de CódigoKotlin</id>
+          </State>
+          <State>
+            <id>MigraçãoKotlin</id>
+          </State>
+          <State>
+            <id>MétodoConvenções de nomenclaturaJava</id>
+          </State>
+          <State>
+            <id>Métricas de classeJava</id>
+          </State>
+          <State>
+            <id>Métricas de código</id>
+          </State>
+          <State>
+            <id>Métricas do métodoGroovy</id>
+          </State>
+          <State>
+            <id>Outros problemasKotlin</id>
+          </State>
+          <State>
+            <id>OutrosGroovy</id>
+          </State>
+          <State>
+            <id>PerformanceJava</id>
+          </State>
+          <State>
+            <id>PortabilidadeJava</id>
+          </State>
+          <State>
+            <id>Possíveis bugsJava</id>
+          </State>
+          <State>
+            <id>Problema de multithreadingGroovy</id>
+          </State>
+          <State>
+            <id>Problemas com operações bitwiseJava</id>
+          </State>
+          <State>
+            <id>Problemas de abstraçãoJava</id>
+          </State>
+          <State>
+            <id>Problemas de anotações de simultaneidadeJava</id>
+          </State>
+          <State>
+            <id>Problemas de atribuiçãoJava</id>
+          </State>
+          <State>
+            <id>Problemas de clonagemJava</id>
+          </State>
+          <State>
+            <id>Problemas de compilaçãoJava</id>
+          </State>
+          <State>
+            <id>Problemas de dependênciaJava</id>
+          </State>
+          <State>
+            <id>Problemas de empacotamentoJava</id>
+          </State>
+          <State>
+            <id>Problemas de estilo de códigoJava</id>
+          </State>
+          <State>
+            <id>Problemas de estiloKotlin</id>
+          </State>
+          <State>
+            <id>Problemas de fluxo de controleGroovy</id>
+          </State>
+          <State>
+            <id>Problemas de fluxo de controleJava</id>
+          </State>
+          <State>
+            <id>Problemas de herançaJava</id>
+          </State>
+          <State>
+            <id>Problemas de interoperabilidade JavaKotlin</id>
+          </State>
+          <State>
+            <id>Problemas de modularizaçãoJava</id>
+          </State>
+          <State>
+            <id>Problemas de nulidadePossíveis bugsJava</id>
+          </State>
+          <State>
+            <id>Problemas de nível de linguagem JavaJava</id>
+          </State>
+          <State>
+            <id>Problemas de serializaçãoJava</id>
+          </State>
+          <State>
+            <id>Problemas de threadingJava</id>
+          </State>
+          <State>
+            <id>Problemas de validadeGradle</id>
+          </State>
+          <State>
+            <id>Problemas de validadeGroovy</id>
+          </State>
+          <State>
+            <id>Problemas no JavaBeansJava</id>
+          </State>
+          <State>
+            <id>Problemas numéricosJava</id>
+          </State>
+          <State>
+            <id>Problemas numéricosKotlin</id>
+          </State>
+          <State>
+            <id>Prováveis bugsGradle</id>
+          </State>
+          <State>
+            <id>Prováveis bugsJava</id>
+          </State>
+          <State>
+            <id>Prováveis bugsKotlin</id>
+          </State>
+          <State>
+            <id>Qodana</id>
+          </State>
+          <State>
+            <id>Questões de atribuiçõesGroovy</id>
+          </State>
+          <State>
+            <id>Questões numéricasJava</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>Redundância de declaraçãoJava</id>
+          </State>
+          <State>
+            <id>RegistroJava</id>
+          </State>
+          <State>
+            <id>RegistroLinguagens JVM</id>
+          </State>
+          <State>
+            <id>Revise</id>
+          </State>
+          <State>
+            <id>Revisão</id>
+          </State>
+          <State>
+            <id>Script de Shell</id>
+          </State>
+          <State>
+            <id>Segurança</id>
+          </State>
+          <State>
+            <id>SegurançaJava</id>
+          </State>
+          <State>
+            <id>TOML</id>
+          </State>
+          <State>
+            <id>TestNGJava</id>
+          </State>
+          <State>
+            <id>Tratamento de errosGroovy</id>
+          </State>
+          <State>
+            <id>Tratamento de errosJava</id>
+          </State>
+          <State>
+            <id>Validação de padrões</id>
+          </State>
+          <State>
+            <id>VisibilidadeJava</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+          <State>
+            <id>YAML</id>
+          </State>
+          <State>
+            <id>anotaçõesGroovy</id>
+          </State>
+          <State>
+            <id>bugs possíveisGroovy</id>
+          </State>
+          <State>
+            <id>problemas do toString()Java</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Definido pelo usuário</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="azul-26" project-jdk-type="JavaSDK" />
+</project>
