@@ -50,13 +50,13 @@ Deve aparecer um container chamado `enviarPedido` com status `Up`.
 
 **Credenciais do banco:**
 
-| Campo   | Valor            |
-|---------|------------------|
-| Host    | localhost        |
-| Porta   | 5432             |
-| Banco   | pedidoFeitoDb    |
-| Usuário | pedidoFeitoAdmin |
-| Senha   | pedidofeito123   |
+| Campo   | Valor        |
+|---------|--------------|
+| Host    | localhost    |
+| Porta   | 5432         |
+| Banco   | enviarPedido |
+| Usuário | adm123       |
+| Senha   | adm123       |
 
 ---
 
@@ -67,13 +67,13 @@ Deve aparecer um container chamado `enviarPedido` com status `Up`.
 1. Abra o DBeaver e crie uma nova conexão PostgreSQL com as credenciais acima
 2. Expanda a conexão → **Bancos de dados → pedidoFeitoDb → Esquemas → public**
 3. Abra o arquivo `src/main/resources/setup.sql` no DBeaver (**Arquivo → Abrir arquivo**)
-4. **Importante:** verifique no seletor do editor SQL (canto superior direito) que o banco ativo é `pedidoFeitoDb` — não `postgres`. Para confirmar, execute: `SELECT current_database();`
+4. **Importante:** verifique no seletor do editor SQL (canto superior direito) que o banco ativo é `enviarPedido` — não `postgres`. Para confirmar, execute: `SELECT current_database();`
 5. Execute o bloco **1 — CRIAR TABELAS** (Ctrl+Enter ou botão Run)
 
 ### Via terminal
 
 ```bash
-docker exec -i pedidoFeito psql -U pedidoFeitoAdmin -d pedidoFeitoDb < src/main/resources/setup.sql
+docker exec -i enviarPedido psql -U adm123 -d enviarPedido < src/main/resources/setup.sql
 ```
 
 ---
@@ -87,41 +87,23 @@ O comando `COPY` do PostgreSQL roda **dentro do container** e não tem acesso ao
 No terminal, na raiz do projeto:
 
 ```bash
-docker cp src/main/resources/produtos.csv pedidoFeito:/tmp/produtos.csv
+docker cp src/main/resources/produtos.csv enviarPedido:/tmp/produtos.csv
 ```
 
 Verifique se o arquivo chegou:
 
 ```bash
-docker exec pedidoFeito ls /tmp/produtos.csv
+docker exec enviarPedido ls /tmp/produtos.csv
 ```
 
 Deve retornar `/tmp/produtos.csv` sem erros.
 
 ### Passo 2 — Executar a importação
 
-No DBeaver, abra o `setup.sql`, certifique-se de que o banco `pedidoFeitoDb` está selecionado no seletor do editor SQL, e execute o **bloco 2 — IMPORTAR DO CSV**.
+No DBeaver, abra o `setup.sql`, certifique-se de que o banco `enviarPedido` está selecionado no seletor do editor SQL, e execute o **bloco 2 — IMPORTAR DO CSV**.
 
 O caminho no script já está configurado para `/tmp/produtos.csv` (dentro do container).
 
-Ou via terminal:
-
-```bash
-docker exec -i pedidoFeito psql -U pedidoFeitoAdmin -d pedidoFeitoDb << 'EOF'
-CREATE TEMP TABLE tmp_import (
-    code VARCHAR(20), name VARCHAR(255), unit VARCHAR(10),
-    price NUMERIC(10,2), category VARCHAR(100), page INT
-);
-COPY tmp_import FROM '/tmp/produtos.csv' DELIMITER ',' CSV HEADER;
-INSERT INTO categories (name)
-    SELECT DISTINCT category FROM tmp_import ON CONFLICT (name) DO NOTHING;
-INSERT INTO products (code, name, unit, category_id)
-    SELECT t.code, t.name, t.unit, c.id FROM tmp_import t
-    JOIN categories c ON c.name = t.category ON CONFLICT (code) DO NOTHING;
-INSERT INTO product_prices (product_id, price, valid_from)
-    SELECT p.id, t.price, NOW() FROM tmp_import t
-    JOIN products p ON p.code = t.code;
-EOF
 ```
 
 ---
