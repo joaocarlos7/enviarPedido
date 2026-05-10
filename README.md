@@ -10,7 +10,7 @@ API REST em Spring Boot para consulta de produtos com suporte a filtros, pagina�
 - [Java 17+](https://www.azul.com/downloads/) (projeto usa Azul JDK)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/) ou outro IDE Java
-- [DBeaver](https://dbeaver.io/) (opcional, para gerenciar o banco)
+- [DBeaver](https://dbeaver.io/) (ou outro para gerenciar o banco)
 
 ---
 
@@ -62,53 +62,18 @@ Deve aparecer um container chamado `enviarPedido` com status `Up`.
 
 ## 4. Criar as tabelas no banco
 
-### Via DBeaver
+### No DBeaver
 
 1. Abra o DBeaver e crie uma nova conexão PostgreSQL com as credenciais acima
-2. Expanda a conexão → **Bancos de dados → pedidoFeitoDb → Esquemas → public**
-3. Abra o arquivo `src/main/resources/setup.sql` no DBeaver (**Arquivo → Abrir arquivo**)
-4. **Importante:** verifique no seletor do editor SQL (canto superior direito) que o banco ativo é `enviarPedido` — não `postgres`. Para confirmar, execute: `SELECT current_database();`
-5. Execute o bloco **1 — CRIAR TABELAS** (Ctrl+Enter ou botão Run)
-
-### Via terminal
-
-```bash
-docker exec -i enviarPedido psql -U adm123 -d enviarPedido < src/main/resources/setup.sql
-```
-
----
-
-## 5. Importar os produtos do CSV
-
-### Passo 1 — Copiar o CSV para dentro do container
-
-O comando `COPY` do PostgreSQL roda **dentro do container** e não tem acesso aos arquivos do seu computador. Por isso é necessário copiar o arquivo para dentro do container antes de executar a importação.
-
-No terminal, na raiz do projeto:
-
+2. Copie o arquivo CSV para dentro do container:
 ```bash
 docker cp src/main/resources/produtos.csv enviarPedido:/tmp/produtos.csv
 ```
-
-Verifique se o arquivo chegou:
-
-```bash
-docker exec enviarPedido ls /tmp/produtos.csv
-```
-
-Deve retornar `/tmp/produtos.csv` sem erros.
-
-### Passo 2 — Executar a importação
-
-No DBeaver, abra o `setup.sql`, certifique-se de que o banco `enviarPedido` está selecionado no seletor do editor SQL, e execute o **bloco 2 — IMPORTAR DO CSV**.
-
-O caminho no script já está configurado para `/tmp/produtos.csv` (dentro do container).
-
-```
+4. Para criar as tabelas e importar os dados, rode os scripts em ordem da pasta resources no Script SQL do Dbeaver.
 
 ---
 
-## 6. Configurar o application.properties
+## 5. Configurar o application.properties
 
 Verifique se o arquivo `src/main/resources/application.properties` está assim:
 
