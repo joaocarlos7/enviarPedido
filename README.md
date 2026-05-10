@@ -1,4 +1,4 @@
-# pedidoFeito
+# Enviar Pedido
 
 API REST em Spring Boot para consulta de produtos com suporte a filtros, paginação e histórico de preços.
 
@@ -11,7 +11,6 @@ API REST em Spring Boot para consulta de produtos com suporte a filtros, pagina�
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/) ou outro IDE Java
 - [DBeaver](https://dbeaver.io/) (opcional, para gerenciar o banco)
-- Número de WhatsApp Ativo(Colocar em: script.js linha: 148 entre ''')
 
 ---
 
