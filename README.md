@@ -17,8 +17,8 @@ API REST em Spring Boot para consulta de produtos com suporte a filtros, pagina�
 ## 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/joaocarlos7/pedidoFeito.git
-cd pedidoFeito
+git clone https://github.com/joaocarlos7/enviarPedido.git
+cd enviarPedido
 ```
 
 ---
@@ -26,7 +26,7 @@ cd pedidoFeito
 ## 2. Instalar o Docker Desktop
 
 1. Acesse [docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop/)
-2. Baixe a versão para o seu sistema operacional (Mac, Windows ou Linux)
+2. Baixe a versão para o seu sistema operacional (Windows, Linux, Mac)
 3. Instale e abra o Docker Desktop
 4. Aguarde o ícone da baleia aparecer na barra de status — significa que o Docker está rodando
 
@@ -46,7 +46,7 @@ Verifique se o container subiu:
 docker ps
 ```
 
-Deve aparecer um container chamado `pedidoFeito` com status `Up`.
+Deve aparecer um container chamado `enviarPedido` com status `Up`.
 
 **Credenciais do banco:**
 
