@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS products CASCADE;
+
+CREATE TABLE products (
+    id BIGSERIAL PRIMARY KEY,
+    code INTEGER NOT NULL UNIQUE,
+    name TEXT NOT NULL,
+    unit VARCHAR(10),
+    price NUMERIC(10,2),
+    category_id BIGINT NOT NULL,
+    CONSTRAINT fk_products_category
+        FOREIGN KEY (category_id)
+        REFERENCES categories(id)
+);
