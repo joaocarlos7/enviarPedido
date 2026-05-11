@@ -1,6 +1,6 @@
 # Enviar Pedido
 
-API REST em Spring Boot para consulta de produtos com suporte a filtros, paginação e histórico de preços.
+Sistema de catálogo e pedidos utilizando Spring Boot + PostgreSQL.
 
 ---
 
@@ -101,6 +101,12 @@ Started PedidoFeitoApplication in X.XXX seconds
 ## 6. Acessar a API
 
 A aplicação estará disponível em: **http://localhost:8080**
+
+---
+
+## Prints de Execução
+
+![PRINTS](docs/images/)
 
 ---
 
