@@ -106,7 +106,7 @@ A aplicação estará disponível em: **http://localhost:8080**
 
 ## Prints de Execução
 
-![PRINTS](docs/images/)
+! (docs/images/)
 
 ---
 
