@@ -73,23 +73,8 @@ docker cp ./src/main/java/com/enviarPedido/resources/produtos.csv enviarPedido:/
 
 ---
 
-## 5. Configurar o application.properties
 
-Verifique se o arquivo `src/main/resources/application.properties` está assim:
-
-```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/pedidoFeitoDb
-spring.datasource.username=pedidoFeitoAdmin
-spring.datasource.password=pedidofeito123
-
-spring.jpa.hibernate.ddl-auto=none
-spring.jpa.show-sql=true
-spring.jpa.properties.hibernate.format_sql=true
-```
-
----
-
-## 7. Executar a aplicação
+## 5. Executar a aplicação
 
 ### Via IntelliJ IDEA
 
@@ -111,26 +96,9 @@ Started PedidoFeitoApplication in X.XXX seconds
 
 ---
 
-## 8. Acessar a API
+## 6. Acessar a API
 
 A aplicação estará disponível em: **http://localhost:8080**
-
----
-
-## 9. Atualizar preço de um produto
-
-Execute no DBeaver ou psql substituindo `product_id` e o novo valor:
-
-```sql
--- Fechar preço atual
-UPDATE product_prices
-SET valid_until = NOW()
-WHERE product_id = 1 AND valid_until IS NULL;
-
--- Inserir novo preço vigente
-INSERT INTO product_prices (product_id, price, valid_from)
-VALUES (1, 29.90, NOW());
-```
 
 ---
 
