@@ -115,44 +115,6 @@ Started PedidoFeitoApplication in X.XXX seconds
 
 A aplicação estará disponível em: **http://localhost:8080**
 
-### Endpoints disponíveis
-
-#### Produtos — `GET /products`
-
-| Parâmetro  | Tipo   | Obrigatório | Descrição                        |
-|------------|--------|-------------|----------------------------------|
-| `search`   | string | não*        | Busca parcial pelo nome          |
-| `code`     | string | não*        | Busca exata pelo código          |
-| `category` | string | não*        | Filtra por categoria             |
-| `page`     | int    | não         | Página (default: 0)              |
-| `size`     | int    | não         | Itens por página (default: 20)   |
-
-*Ao menos um dos três primeiros é obrigatório.
-
-**Exemplos:**
-
-```bash
-# Buscar por nome
-GET http://localhost:8080/products?search=açúcar
-
-# Buscar por código
-GET http://localhost:8080/products?code=9056
-
-# Buscar por categoria
-GET http://localhost:8080/products?category=Bebidas
-
-# Combinar filtros com paginação
-GET http://localhost:8080/products?search=vinho&category=Bebidas Alcoólicas&page=0&size=10
-```
-
-#### Categorias — `GET /categories`
-
-Retorna todas as categorias cadastradas.
-
-```bash
-GET http://localhost:8080/categories
-```
-
 ---
 
 ## 9. Atualizar preço de um produto
