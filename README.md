@@ -67,7 +67,7 @@ Deve aparecer um container chamado `enviarPedido` com status `Up`.
 1. Abra o DBeaver e crie uma nova conexão PostgreSQL com as credenciais acima
 2. Copie o arquivo CSV para dentro do container:
 ```bash
-docker cp src/main/resources/produtos.csv enviarPedido:/tmp/produtos.csv
+docker cp ./src/main/java/com/enviarPedido/resources/produtos.csv enviarPedido:/tmp/produtos.csv
 ```
 4. Para criar as tabelas e importar os dados, rode os scripts em ordem da pasta resources no Script SQL do Dbeaver.
 
