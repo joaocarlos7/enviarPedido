@@ -11,6 +11,7 @@ API REST em Spring Boot para consulta de produtos com suporte a filtros, pagina�
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/) ou outro IDE Java
 - [DBeaver](https://dbeaver.io/) (ou outro para gerenciar o banco)
+- WhatsApp (número ativo) opcional, se quiser testar enviar mensagem.
 
 ---
 
@@ -80,8 +81,9 @@ docker cp ./src/main/java/com/enviarPedido/resources/produtos.csv enviarPedido:/
 
 1. Abra o projeto no IntelliJ
 2. Aguarde o Maven baixar as dependências
-3. Localize a classe `PedidoFeitoApplication.java`
-4. Clique no botão **Run** (▶) ou use `Shift + F10`
+3. Opcional (para encaminhar o pedido no WhatsApp, acesse scripts.js edite a linha 148 com o número '55DD+número'
+4. Localize a classe `enviarPedidoApplication.java`
+5. Clique no botão **Run** (▶) ou use `Shift + F10`
 
 ### Via terminal
 
